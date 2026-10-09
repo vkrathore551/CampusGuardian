@@ -86,3 +86,16 @@ incident_photos/
 *.db-journal
 *.db-wal
 *.db-shm
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+.venv312/
+venv/
+
+# Local environment variables
+.env
+
+# Test artifacts
+.pytest_cache/
+.coverage
