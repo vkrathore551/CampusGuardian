@@ -1,8 +1,88 @@
+# ============================================
+# CampusGuardian AI - Git Ignore Configuration
+# ============================================
+
+# Python Virtual Environments
 .venv/
 venv/
+ENV/
+env/
+
+# Python Bytecode and Cache
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.pytest_cache/
+
+# Environment Variables & Sensitive Credentials
+.env
+.env.*
+!.env.example
+
+# Backups & Temporary Scratch Files
+*.bak
+*.backup
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+
+# Large Video Files (Preserve evidence images in incident_photos/)
 *.mp4
 *.avi
 *.mov
-.env
+
+# Operating System Metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+# Local database files
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Application backup files
+app_backup.py
+app_old.py
+*.bak
+*.backup
+
+# Generated logs
+*.log
+# Ignore local database and journal files
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Ignore local backups
+*.bak
+*.backup
+app_backup.py
+app_old.py
+
+# Ignore local event records
+events.csv
+
+# Ignore local incident evidence
+incident_photos/*
+
+# Ignore local event records
+events.csv
+
+# Ignore local incident evidence
+incident_photos/
+
+# Ignore local database files
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
